@@ -28,7 +28,7 @@ public class Teste {
         return salvarDocumento.salvar(documento,chamado);
     }
 
-    //faz download de um unico arquivo, precisa do nome do arquivo e o chamadoId (pasta), que no teste está 320.
+    //faz download de um unico arquivo, precisa do nome do arquivo e o chamadoId (pasta), que no teste está 320...
     @GetMapping("/download")
     public ResponseEntity<Resource> downloadArquivo(@RequestParam(name = "nomeArquivo") String nomeArquivo) {
         Path diretorioDestino = Paths.get("./documentos/chamados/320/" + nomeArquivo);
